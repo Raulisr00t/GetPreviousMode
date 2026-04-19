@@ -40,11 +40,12 @@ if (mode == EXEC_KERNEL_MODE) {
 } else {
     // Running in Ring 3 (standard application)
 }
+
 ```
 ## 🔐 Security Note
 ```
-    This code is read-only and does not modify system state.
-    Attempting to access kernel memory structures from user mode will cause an Access Violation.
-    Do not use this for privilege escalation or anti-cheat bypassing.
-    ⚠️ MSVC x64 does not support inline assembly. The code safely returns EXEC_USER_MODE for user-mode apps
+This code is read-only and does not modify system state.
+Attempting to access kernel memory structures from user mode will cause an Access Violation.
+Do not use this for privilege escalation or anti-cheat bypassing.
+⚠️ MSVC x64 does not support inline assembly. The code safely returns EXEC_USER_MODE for user-mode apps
 ```
