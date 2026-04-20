@@ -31,7 +31,7 @@ Clang (Windows)
 clang mode.c -o mode.exe
 ```
 
-###▶️ Usage
+### ▶️ Usage
 ```c
 Execution_Mode mode = GetPreviousMode();
 
